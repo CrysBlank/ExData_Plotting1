@@ -11,7 +11,7 @@ png("plot3.png")
 plot(SubMeterDS$date_time,SubMeterDS$Sub_metering_1, type="n",ylab="Energy sub metering",xlab="") 
 lines(GlobalAcPowerDS$date_time,SubMeterDS$Sub_metering_1)
 lines(GlobalAcPowerDS$date_time,SubMeterDS$Sub_metering_2,col="red") 
-lines(GlobalAcPowerDS$date_time,SubMeterDS$Sub_metering_3,col="red")
+lines(GlobalAcPowerDS$date_time,SubMeterDS$Sub_metering_3,col="blue")
 legend("topright",lty=c(1,1,1) , 
        col = c("black","red","blue"), 
        legend = c("Sub metering 1","Sub Metering 2","Sub metering 3"))
